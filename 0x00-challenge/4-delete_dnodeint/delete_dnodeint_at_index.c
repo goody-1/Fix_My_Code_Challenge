@@ -29,7 +29,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		p++;
 	}
 
-	if (0 == index)
+	if (index == 0)
 	{
 		*head = (*head)->next;
 		free(saved_head);
